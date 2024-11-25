@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img{
+            /*Primeira forma de fazer, ñ fica tão boa... segunda forma melhor mas é na tag img!!*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione perferendis debitis odio nostrum, illum suscipit. Incidunt, commodi necessitatibus minus dolore error facere eum quisquam omnis eaque numquam neque doloribus alias!</p>
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina-blok"></picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio a pariatur sint minima? Ad, ut corrupti! Aspernatur, quo mollitia exercitationem consequatur laudantium quam, nobis obcaecati, dicta ullam cumque in laboriosam.</p>
+    </main>
+    
+</body>
+</html>
