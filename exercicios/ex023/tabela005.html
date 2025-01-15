@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela agrupada com colgroup.</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .salmon{
+            background-color: salmon;
+        }
+
+        .slateblue{
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+        <table>
+            <colgroup>
+                <col class="salmon">
+                <col class="slateblue" span="2">
+                <col class="salmon">
+                
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Engenheira</td>
+            </tr>
+            <tr>
+                <td>Pedro Melo</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>Maria Liz</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Desenvolvedora</td>
+            </tr>
+            <tr>
+                <td>Sara Crisostomo</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Recursos Humanos</td>
+            </tr>
+            <tr>
+                <td>Gabriel Crisostomo</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Roberto Araujo</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Assistente Logistico</td>
+            </tr>
+        </table>
+</body>
+</html>
