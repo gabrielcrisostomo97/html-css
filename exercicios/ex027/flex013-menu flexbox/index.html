@@ -6,11 +6,13 @@
     <title>Menu com flexbox</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -25,5 +27,24 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quia quod natus atque deleniti dolore voluptas temporibus maiores magnam, vero nostrum? Tempore sit beatae nisi dolor, consequuntur porro eius et.
         </p>
     </main>
+
+
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >=580) {
+                itens.style.display ='block'
+            } else {
+                itens.style.display ='none'
+            }
+        }
+
+        function clickMenu () {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

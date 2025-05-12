@@ -8,6 +8,18 @@ header > h1 {
     flex-basis: 50px;
 }
 
-header > nav > a {
-    width: 90vw;
+i#burguer {
+    display:inline
+}
+
+nav {
+    display: block;
+}
+
+nav > a {
+    display: inline-block;
+}
+
+main {
+    width: 98vw;
 }

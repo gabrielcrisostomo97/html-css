@@ -34,7 +34,6 @@ header > nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-
 }
 
 header > nav > a {
@@ -53,6 +52,10 @@ header > nav > a:hover {
     transition: background-color 1s;
 }
 
+nav > a {
+    display: inline-block;
+}
+
 main {
     background-color: white;
     margin: 10px;
@@ -61,3 +64,15 @@ main {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.568);
 }
 
+i#burguer {
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+header > nav > a {
+    width: 90vw;
+}
